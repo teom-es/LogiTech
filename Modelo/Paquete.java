@@ -3,8 +3,7 @@ public abstract class Paquete implements Enviable {
     private double pesoKg;
     private String destino;
 
-
-    public Paquete(String codigoTrack, double pesoKg , String destino) {
+    public Paquete(String codigoTrack, double pesoKg, String destino) {
         this.codigoTrack = codigoTrack;
         this.pesoKg = pesoKg;
         this.destino = destino;
@@ -34,6 +33,10 @@ public abstract class Paquete implements Enviable {
 
     public String getDestino() {
         return destino;
+    }
+
+    public void actualizarDestino(String nuevoDestino) {
+        destino = nuevoDestino;
     }
 
     public void actualizarDestino(String nuevoDestino, boolean express) {
